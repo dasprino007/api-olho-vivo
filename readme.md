@@ -97,24 +97,3 @@ vercel --prod
 O endereço público é exibido ao final do comando.
  
 Após alterar uma variável de ambiente, é necessário publicar novamente para que a mudança tenha efeito.
- 
-## Gerenciar o token
- 
-Listar variáveis:
- 
-```
-vercel env ls
-```
- 
-Remover uma variável:
- 
-```
-vercel env rm SPTRANS_TOKEN
-```
- 
-Substituir o valor (remover e adicionar novamente):
- 
-```
-vercel env rm SPTRANS_TOKEN
-vercel env add SPTRANS_TOKEN
-```
