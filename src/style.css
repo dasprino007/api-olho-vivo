@@ -1,0 +1,76 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+html, body, #map {
+	height: 100vh;
+	width: 100vw;
+}
+
+.leaflet-tooltip {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1000; /* fica acima do mapa do Leaflet */
+  width: 260px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  font-family: system-ui, sans-serif;
+}
+
+.menu h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  color: #222;
+}
+
+.menu label {
+  font-size: 13px;
+  color: #555;
+}
+
+.menu input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.menu input:focus {
+  outline: none;
+  border-color: #e63946;
+}
+
+.menu button {
+  margin-top: 4px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #e63946;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.menu button:hover {
+  background: #c92f3b;
+}
+
+/* label vazio sobrando no HTML */
+.menu label[for="terminal"] {
+  display: none;
+}
+
+.leaflet-marker-icon svg {
+  animation: bounceIn 0.6s both;
+}
